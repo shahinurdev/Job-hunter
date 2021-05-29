@@ -1,0 +1,15 @@
+.featuredCategories{
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+.featureH5{
+    margin-bottom: 3rem;
+}
+.icons{
+    display:block;
+    margin:auto;
+}
+.columnBg{
+    background-color: #F0F5FD;
+    padding: .5rem
+}

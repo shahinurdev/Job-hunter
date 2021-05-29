@@ -1,0 +1,63 @@
+#sidebar {
+    width: 30%;
+    padding: 10px;
+    margin: 0;
+    float: left
+}
+
+#job-listing {
+    width: 70%;
+    padding: 10px;
+    margin: 0;
+    float: right
+}
+
+
+@media(min-width:991px) {
+    #mobile-filter {
+        display: none
+    }
+}
+
+@media(min-width:768px) and (max-width:991px) {
+    #mobile-filter {
+        display: none
+    }
+}
+
+@media(min-width:568px) and (max-width:767px) {
+    .navbar-nav {
+        margin-left: 20%
+    }
+
+    .nav-item {
+        padding-left: 10px
+    }
+
+
+    .fa-circle {
+        font-size: 15px
+    }
+
+    #mobile-filter {
+        display: none
+    }
+}
+
+@media(max-width:567px) {
+
+    #sidebar {
+        width: 100%;
+        padding: 10px;
+        margin: 0;
+        float: left
+    }
+
+    #sidebar {
+        display: none
+    }
+
+    #mobile-filter {
+        padding: 10px
+    }
+}
