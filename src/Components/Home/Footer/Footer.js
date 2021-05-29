@@ -25,7 +25,7 @@ const Footer = () => {
          
 
           
-            <a className="footer-name " href="#"><small>Customized,Designed by kamrul,shoron and pabel</small></a>
+            <a className="footer-name " href="#"><small>Customized and Designed by kamrul,shoron and pabel</small></a>
         </div>
     );
 };
