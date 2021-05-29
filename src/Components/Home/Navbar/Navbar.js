@@ -10,7 +10,11 @@ const Navbar = () => {
             Job Hunter</Link>
             </h3>
             
+<<<<<<< HEAD
             <button type="button" name="button" className="navbar-toggler" data-toggle="collapse" data-target="#navBar">
+=======
+            <button type="button" name="button" className="navbar-toggler " data-toggle="collapse" data-target="#navBar">
+>>>>>>> 053301ae92e1e86ae3273f468455bd27c1e3b9fd
                 <span className="navbar-toggler-icon"></span>
             </button>
             <div id="navBar" className="navbar-collapse collapse">
