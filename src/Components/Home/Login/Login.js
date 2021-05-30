@@ -4,15 +4,17 @@ import "firebase/auth";
 import { useHistory, useLocation } from 'react-router';
 import { UserContext } from './../../../App';
 import { firebaseConfig } from './fireBase.config';
+import { useDispatch } from 'react-redux';
+import { login } from '../../../redux/actions/userAction';
 
 const Login = () => {
-    const [loggedInUser, setLoggedInUser] = useContext(UserContext)
     const history = useHistory();
     const location = useLocation()
     let { from } = location.state || { from: { pathname: "/" } };
     if (firebase.apps.length === 0) {
         firebase.initializeApp(firebaseConfig);
     }
+    const dispatch = useDispatch();
     const handleGoogleSignIn = () => {
         var provider = new firebase.auth.GoogleAuthProvider();
         firebase.auth()
@@ -20,8 +22,8 @@ const Login = () => {
             .then((result) => {
                 var credential = result.credential;
                 var { displayName, email } = result.user;
-                const signInUser = { displayName, email }
-                setLoggedInUser(signInUser);
+                const signInUser = { displayName, email, isSignedIn: true }
+                dispatch(login(signInUser));
                 history.replace(from)
 
             }).catch((error) => {
