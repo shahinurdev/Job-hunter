@@ -1,4 +1,4 @@
-# This is Group workink Projects, It's name: Job Hunter
+# This is Group working Project, It's name: Job Hunter
 ## PROJECT MANAGEMENT AND DEVELOPER : MD NOWSEEN YEATUN PABEL
 ## DEVELOPER:  SHAHRIAR EMON
 ## DEVELOPER: MD SHAHINUR KHAN
