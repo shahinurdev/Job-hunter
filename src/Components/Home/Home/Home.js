@@ -5,7 +5,6 @@ import { FeaturedCategories } from '../FeaturedCategories/FeaturedCategories';
 import Footer from '../Footer/Footer';
 import Job from '../Job/Job';
 import Navbar from '../Navbar/Navbar';
-
 const Home = () => {
     return (
         <div>
