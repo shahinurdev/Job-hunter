@@ -8,7 +8,6 @@ import { useDispatch } from 'react-redux';
 import { login } from '../../../redux/actions/userAction';
 
 const Login = () => {
-    // const [loggedInUser, setLoggedInUser] = useContext(UserContext)
     const history = useHistory();
     const location = useLocation()
     let { from } = location.state || { from: { pathname: "/" } };
@@ -24,7 +23,6 @@ const Login = () => {
                 var credential = result.credential;
                 var { displayName, email } = result.user;
                 const signInUser = { displayName, email, isSignedIn: true }
-                // setLoggedInUser(signInUser);
                 dispatch(login(signInUser));
                 history.replace(from)
 

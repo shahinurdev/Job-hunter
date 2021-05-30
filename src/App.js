@@ -4,9 +4,7 @@ import Home from "./Components/Home/Home/Home";
 import Login from "./Components/Home/Login/Login";
 export const UserContext = createContext();
 function App() {
-  // const [loggedInUser, setLoggedInUser] = useState({});
   return (
-    // <UserContext.Provider value={[loggedInUser, setLoggedInUser]}>
       <Router>
         <Switch>
           <Route path="/login">
@@ -17,7 +15,6 @@ function App() {
           </Route>
         </Switch>
       </Router>
-    // </UserContext.Provider>
   );
 }
 
