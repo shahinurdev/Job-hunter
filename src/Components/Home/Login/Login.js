@@ -39,7 +39,7 @@ const Login = () => {
         <div style={{marginBottom:'318px'}} className="container">
             <h5 className="d-flex justify-content-center pt-5 pb-0">Sign in - Google Account</h5>
             <div className='d-flex justify-content-center'>
-            <button className="btn btn-primary"  onClick={handleGoogleSignIn}>
+            <button id="google-login-btn" className="btn btn-primary"  onClick={handleGoogleSignIn}>
               Continue with Google
             </button>
             </div>
